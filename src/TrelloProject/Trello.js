@@ -12,7 +12,7 @@ const Trello = () => {
                 <HeaderNav /> 
                 <HeroComp />
                 <Comp4 />
-             { /* <Comp8 />*/ }
+                 {/*<Comp8 />*/ }
             </Wrapper>
         </Container>
     )

@@ -1,5 +1,7 @@
 import React from 'react'
 import styled  from 'styled-components';
+import img from "./img/app.png";
+import img2 from "./img/gog.png";
 
 const Comp8 = () => {
     return (
@@ -17,9 +19,12 @@ const Comp8 = () => {
                 </InputHolder>
         </Card>
         <Sub>
-        <Text1></Text1>
-        <Image1 />
-        <Image2 />
+        <Text1>Trello also works great on your smaller screen.
+         </Text1>
+         <ImageHolder>
+        <Image1 src={img}/>
+        <Image2 src={img2}/>
+        </ImageHolder>
         </Sub>
         </Wrapper>
         </Container>
@@ -109,7 +114,35 @@ line-height: 1.5;
 }
 `;
 
-const Sub = styled.div``;
-const Text1 = styled.div``;
-const Image1 = styled.img``;
-const Image2 = styled.img``;
+const Sub = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+//padding-top: 70px;
+padding-left: 250px;
+`;
+const Text1 = styled.div`
+font-size: 20px;
+margin-right: -35px;
+`;
+
+const ImageHolder = styled.div`
+padding-left: 20px;
+padding: 55px;
+cursor: pointer;
+
+
+`;
+const Image1 = styled.img`
+width: 170px;
+height: 60px;
+border-radius: 3px;
+padding-right: 10px;
+`;
+const Image2 = styled.img`
+width: 160px;
+height: 50px;
+padding-bottom: 5px;
+padding-top: 5px;
+border-radius: 3px;
+`;
